@@ -2,7 +2,7 @@ package Chaudhary.Chacha;
 
 import java.util.ArrayList;     //a list is simply an interface and the array list is the implementation of that interface.
 import java.util.List;
-//import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.StringUtils; //This imports the "StringUtils" class from the "apache.commons.lang3" library
 
 public class Application {
 
@@ -11,8 +11,8 @@ public class Application {
 		System.out.println ("Starting Application");
 		Application app = new Application();
 		app.greet();
-		//int count = app.countWords("I've four words");
-		//System.out.println("Word Count: "+count);
+		int count = app.countWords("I've four words");
+		System.out.println("Word Count: "+ count);
     }
 	
 	public Application() {
@@ -28,8 +28,8 @@ public class Application {
 			System.out.println("Greeting: "+ greeting);
 		}
 	}
-/**	public int countWords (String words){
+    public int countWords(String words){
 		String[] seperateWords = StringUtils.split(words, ' ');
 		return (seperateWords == null) ? 0 : seperateWords.length;
-	}   **/
+	}   
 }
